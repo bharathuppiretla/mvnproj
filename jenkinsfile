@@ -13,7 +13,7 @@ node {
             // Run the sonar scan
             steps {
                 script {
-                    def mvnHome = tool 'mvn'
+                    //def mvnHome = tool 'mvn'
                     withSonarQubeEnv {
 
                         sh "'${mvnHome}/bin/mvn'  verify sonar:sonar -Dintegration-tests.skip=true -Dmaven.test.failure.ignore=true"
