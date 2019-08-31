@@ -1,0 +1,6 @@
+version: '2'
+services:
+  frontend:
+    image: bharathuppiretla/petclinic1
+    ports:
+    - "8081:8080"
