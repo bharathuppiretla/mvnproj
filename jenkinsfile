@@ -25,7 +25,7 @@ node {
   stage('Petclinic Docker Image') {
    
 sh "sudo docker build -t bharathuppiretla/petclinic1 ."
-sh "sudo docker push bharathuppiretla/petclinic"
+sh "sudo docker push bharathuppiretla/petclinic1"
 
   
 }
